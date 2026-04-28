@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Document Viewer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>JKC Document | Learn The JKC Club</title>
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="Read the official JKC document. Learn about The JKC Club, its mindset, purpose, and philosophy.">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://learn.thejkc.club/" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="JKC Document | Learn The JKC Club">
+    <meta property="og:description" content="Read and explore the official JKC document.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://learn.thejkc.club/">
+    <meta property="og:image" content="https://learn.thejkc.club/assets/logo_L67wytIRZZIGNpFqYV08i.png">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "JKC Document",
+      "about": "The JKC Club",
+      "url": "https://learn.thejkc.club/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "The JKC Club"
+      }
+    }
+    </script>
+
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #000;
+        }
+
+        .topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: black;
+            color: white;
+            padding: 10px 15px;
+            font-family: sans-serif;
+            z-index: 10;
+        }
+
+        .topbar a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        embed {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 40px);
+        }
     </style>
 </head>
+
 <body>
-    <embed src="JKC1.pdf" type="application/pdf" width="100%" height="100%">
+
+    <!-- SIMPLE NAV (helps SEO + linking) -->
+    <div class="topbar">
+        <a href="https://thejkc.club">Home</a>
+        <a href="https://shop.thejkc.club">Shop</a>
+        <a href="https://instagram.com/real.jkc">Instagram</a>
+    </div>
+
+    <!-- ACTUAL CONTENT SIGNAL FOR GOOGLE -->
+    <h1 style="position:absolute; left:-9999px;">
+        The JKC Club Document and Philosophy
+    </h1>
+
+    <!-- PDF -->
+    <embed src="JKC1.pdf" type="application/pdf">
+
 </body>
 </html>
